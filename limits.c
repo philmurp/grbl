@@ -227,7 +227,7 @@ void limits_go_home()
   st_wake_up();
   
   // Search to engage all axes limit switches at faster homing seek rate.
-  homing_cycle(HOMING_SEARCH_CYCLE_0, true, false, settings.homing_seek_rate);  // Search cycle 0
+  //homing_cycle(HOMING_SEARCH_CYCLE_0, true, false, settings.homing_seek_rate);  // Search cycle 0
   #ifdef HOMING_SEARCH_CYCLE_1
     homing_cycle(HOMING_SEARCH_CYCLE_1, true, false, settings.homing_seek_rate);  // Search cycle 1
   #endif
